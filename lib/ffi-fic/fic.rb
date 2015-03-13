@@ -1,11 +1,18 @@
 module FIC
 class Fic
-    def initialize(a,b,c) # string, string, uint64
-        @a = a
-        @b = b
-        @c = c
-        FIC.fic_new @a,@b,@c
+    def initialize(key,algo,keyid) # string, string, uint64
+        @key   = key
+        @algo   = algo
+        @keyid = keyid
+        @pointer = FIC.fic_new @key, @algo, @keyid
+        @pointer
     end
+
+    def initialized?
+        !@pointer.nil?
+    end
+
+
 end
 end
 

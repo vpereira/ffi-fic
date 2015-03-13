@@ -12,5 +12,10 @@ describe FIC do
             f = FIC::Fic.new "foobar.pub.asc", "sha512", FIC::Util.strtoull("b34f10ddc906fd7f")
             f.wont_be_nil
         end
+        it "call new and get a pointer back" do
+            f = FIC::Fic.new "foobar.pub.asc", "sha512", FIC::Util.strtoull("b34f10ddc906fd7f")
+            # not a better way to express it using spec matchers
+            assert_equal f.initialized?,true
+        end
     end
 end
