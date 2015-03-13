@@ -2,7 +2,8 @@ require 'ffi'
 
 module FIC
     extend FFI::Library
-    ffi_lib './libfic.so'
+    # you must install it
+    ffi_lib 'libfic.so'
     #(const char *key, const char *md, uint64_t id)
 
     attach_function :fic_new, [:string, :string, :uint64], :pointer
