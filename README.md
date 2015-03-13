@@ -6,3 +6,7 @@ from my repository https://build.opensuse.org/package/show/home:vpereirabr/libfi
 
 ```zypper in libfic```
 
+
+=== IMPORTANT ===
+
+Read the README https://github.com/sebastian-suse/fic/blob/master/README.md and learn how to setup the necessary keys
