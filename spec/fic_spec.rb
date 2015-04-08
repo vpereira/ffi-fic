@@ -38,7 +38,7 @@ describe FIC do
             end
 
             it "call verify_meta and return true" do
-                skip "pending"
+                # skip "pending"
                 assert_equal @f.verify_meta(@my_file), true
             end
         end
@@ -57,7 +57,7 @@ describe FIC do
             end
 
             it "call sign_meta and return true" do
-                skip "pending"
+                # skip "pending"
                 assert_equal @f.sign_meta(@my_file), true
             end
         end
